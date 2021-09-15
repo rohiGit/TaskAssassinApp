@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FocusActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+        android:text="Focus mode"
+        android:textColor="@color/colorGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hour_card_border"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="7dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorGreen"
+            android:visibility="invisible"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hour_card"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="7dp"
+            android:layout_gravity="center"
+            app:cardElevation="7dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:transitionName="cardTransition"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/forty_min_card_border"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="7dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorGreen"
+            android:visibility="invisible"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/forty_min_card"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="7dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:transitionName="cardTransition"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/thirty_min_card_border"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="7dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorGreen"
+            android:visibility="invisible">
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/thirty_min_card"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            app:cardCornerRadius="7dp"
+            android:layout_gravity="center"
+            app:cardElevation="7dp"
+            android:transitionName ="cardTransition"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/twenty_min_card_border"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="7dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorGreen"
+            android:visibility="invisible"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/twenty_min_card"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            app:cardCornerRadius="7dp"
+            android:layout_gravity="center"
+            app:cardElevation="7dp"
+            android:transitionName="cardTransition"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fifteen_min_card_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorGreen"
+            app:cardCornerRadius="7dp"
+            android:visibility="invisible">
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fifteen_min_card"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_gravity="center"
+            app:cardElevation="7dp"
+            app:cardCornerRadius="7dp"
+            android:transitionName="cardTransition"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="192dp"
+        android:text="Choose your craft"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="00:00:00"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:transitionName="timerTransition"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout5" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/colorDarkGreen"
+        android:gravity="center"
+        android:text="Next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
